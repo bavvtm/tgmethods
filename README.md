@@ -4,7 +4,6 @@
 | 📖 [Default Docs](https://core.telegram.org/bots/api#available-methods)|
 |------------------------------------------------------------------------|
 | 📖 [See Docs Here](docs/modules.md) |
-|-------------------------------------|
 
 ### Features
 - Use Telegram API 5.3.0
