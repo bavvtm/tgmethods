@@ -1,4 +1,4 @@
-## @mousegram/methods
+## @callmeumm/tgmethods
 > Telegram Bot API Methods Build With Typescript 
 
 | 📖 [Default Docs](https://core.telegram.org/bots/api#available-methods)|
@@ -11,7 +11,7 @@
 
 ### Usage
 ```js
-const { Methods } = require("@mousegram/methods");
+const { Methods } = require("@callmeumm/tgmethods");
 const token = "YOUR-BOT-TOKEN"; // get in @botfather
 const bot = new Methods(token);
 
