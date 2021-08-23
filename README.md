@@ -1,6 +1,8 @@
 ## @mousegram/methods
 > Telegram Bot API Methods Build With Typescript 
 
+| 📖 [Default Docs](https://core.telegram.org/bots/api#available-methods)|
+|------------------------------------------------------------------------|
 | 📖 [See Docs Here](docs/modules.md) |
 |-------------------------------------|
 
