@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Telegram Bot API Methods Build With Typescript ",
   "main": "lib/index.js",
-  "repository": "https://github.com/callmeumm/mousegram-methods",
+  "repository": "https://github.com/callmeumm/tgmethods",
   "scripts": {
     "build": "tsc --build",
     "docs": "typedoc --out docs src/index.ts --plugin typedoc-plugin-markdown",
