@@ -1,0 +1,27 @@
+{
+  "name": "@mousegram/methods",
+  "version": "0.0.1",
+  "description": "Telegram Bot API Methods Build With Typescript ",
+  "main": "lib/index.js",
+  "repository": "https://github.com/callmeumm/mousegram-methods",
+  "scripts": {
+    "build": "tsc --build",
+    "docs": "typedoc --out docs src/index.ts --plugin typedoc-plugin-markdown",
+    "generate": "nodemon .generator/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MA Choirul Umam <https://github.com/callmeumm>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.7.1",
+    "@types/node-fetch": "^2.5.12",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "typedoc": "^0.21.6",
+    "typedoc-plugin-markdown": "^3.10.4",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
