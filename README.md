@@ -20,5 +20,5 @@ bot.getMe();
 ```
 
 ### Special Thanks
-- [got](https://github.com/sindresorhus/got)
+- [node-fetch](https://github.com/node-fetch/node-fetch)
 - [tg-bot-api](https://ark0f.github.io/tg-bot-api)
