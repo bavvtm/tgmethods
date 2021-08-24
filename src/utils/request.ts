@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import got from "got";
 
 export const API_URL: string = 'https://api.telegram.org/bot';
 
@@ -8,11 +8,9 @@ export async function request(
     params?: any
 ): Promise<any> {
     const POST_URL: string = `${API_URL+token}/${action}`;
-    const response = await fetch(POST_URL, {
-        method: 'post',
-        body: JSON.stringify(params),
-        headers: {'Content-Type': 'application/json'}
-    });
-    const result = await response.json();
-    return result;   
+    const response = await got.post(POST_URL, {
+        json: params
+    }).json();
+
+    return response;
 }
