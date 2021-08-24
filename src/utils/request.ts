@@ -8,11 +8,21 @@ export async function request(
     params?: any
 ): Promise<any> {
     const POST_URL: string = `${API_URL+token}/${action}`;
+    const headers: Record<string, string> = {
+      'content-type': 'application/json',
+    };
+    const body = JSON.stringify(params);
     const response = await fetch(POST_URL, {
-        method: 'post',
-        body: JSON.stringify(params),
-        headers: {'Content-Type': 'application/json'}
+        compress: false,
+        method: 'POST',
+        headers,
+        body: body
     });
-    const data = await response.json();
-    return data;
+
+    if (response !== undefined) {
+        const json = await response.json();
+        if (json.ok) return json.result;
+    } else {
+        return "ERROR";
+    }
 }
